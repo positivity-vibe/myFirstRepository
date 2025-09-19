@@ -18,8 +18,10 @@ namespace myFirstRepository
                 myArray[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int i = 0; i < myArray.Length; i++) {
+            for (int i = myArray.Length - 1; i >= 0; i--)
+            {
                 Console.WriteLine($"myArray[{i}] = {myArray[i]}");
+                
             }
         }
     }
